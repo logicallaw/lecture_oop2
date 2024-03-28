@@ -9,10 +9,10 @@ private:
     int lastMaintanenceDay;
     static int lastOSUpdateDay;
 public:
-    Server(char* name, int serial, int version, int lastday);
+    Server(const char* name, int serial, int version, int lastday);
     Server& updateMaintanenceDay(int day);
-    static void updateOSUpdateDay(int day);
     void updateSerialNumber(int serialNumber);
+    static void updateOSUpdateDay(int day);
     int getOSUpdateDay();
 };
 
@@ -21,7 +21,7 @@ void Server::updateOSUpdateDay(int day) {
     lastOSUpdateDay = day;
 }
 
-Server::Server(char *name, int serial, int version, int lastday)
+Server::Server(const char *name, int serial, int version, int lastday)
     : modelName{ new char[strlen(name) + 1]}, serialNumber{ serial }, OSVersion{ version}, lastMaintanenceDay{ lastday } {
     for (int i{0}; i < strlen(name); i++) {
         modelName[i] = name[i];

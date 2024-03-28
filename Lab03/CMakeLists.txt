@@ -3,4 +3,4 @@ project(Lab03)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Lab03 main.cpp)
+add_executable(Lab03 practice2.cpp)

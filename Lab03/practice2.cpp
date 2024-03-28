@@ -69,14 +69,15 @@ public:
         _info.setPrice(info.getPrice());
     }
 
-    Car(const Car& origin) {
-        _brand.setId((origin._brand).getId());
-        _brand.setBrandName((origin._brand).getBrandName());
-        _brand.setModelName((origin._brand).getModelName());
-
-        _info.setYear((origin._info).getYear());
-        _info.setKilometers((origin._info).getKilometers());
-        _info.setPrice((origin._info).getPrice());
+    Car(const Car& origin)
+        : Car{origin._brand, origin._info} { //delegating constructor by using parameter constructor.
+//        _brand.setId((origin._brand).getId());
+//        _brand.setBrandName((origin._brand).getBrandName());
+//        _brand.setModelName((origin._brand).getModelName());
+//
+//        _info.setYear((origin._info).getYear());
+//        _info.setKilometers((origin._info).getKilometers());
+//        _info.setPrice((origin._info).getPrice());
     }
 
     void printBrand() const {

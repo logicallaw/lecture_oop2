@@ -1,3 +1,3 @@
-/Users/jun/Desktop/CLionProjects/Chap02/cmake-build-debug/CMakeFiles/Chap02.dir
-/Users/jun/Desktop/CLionProjects/Chap02/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/jun/Desktop/CLionProjects/Chap02/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jun/Desktop/oop2_clion/Chap02/cmake-build-debug/CMakeFiles/Chap02.dir
+/Users/jun/Desktop/oop2_clion/Chap02/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jun/Desktop/oop2_clion/Chap02/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -6,17 +6,14 @@ private:
     char* modelName;
     int serialNumber;
     int OSVersion;
-    int lastMaintanceDay;
+    int lastMaintanenceDay;
     static int lastOSUpdateDay;
 public:
-    Server(const char* name, int serial, int version, int lastday);
-
+    Server(char* name, int serial, int version, int lastday);
+    Server& updateMaintanenceDay(int day);
+    static void updateOSUpdateDay(int day);
     void updateSerialNumber(int serialNumber);
     int getOSUpdateDay();
-
-    Server& updateMaintanceDay(int day);
-    static void updateOSUpdateDay(int day);
-
 };
 
 int Server::lastOSUpdateDay{ 0 };
@@ -24,23 +21,18 @@ void Server::updateOSUpdateDay(int day) {
     lastOSUpdateDay = day;
 }
 
-Server::Server(const char *name, int serial, int version, int lastday)
-    : modelName{ new char[strlen(name) + 1]}, serialNumber{ serial }, OSVersion{ version}, lastMaintanceDay{ lastday } {
+Server::Server(char *name, int serial, int version, int lastday)
+    : modelName{ new char[strlen(name) + 1]}, serialNumber{ serial }, OSVersion{ version}, lastMaintanenceDay{ lastday } {
     for (int i{0}; i < strlen(name); i++) {
         modelName[i] = name[i];
     }
     modelName[strlen(name)] = '\0';
 }
-
-Server& Server::updateMaintanceDay(int day) {
-    this->lastMaintanceDay = day;
+Server& Server::updateMaintanenceDay(int day) {
+    this->lastMaintanenceDay = day;
     return *this;
 }
-
-void Server::updateSerialNumber(int serialNumber) {
-    this->serialNumber = serialNumber;
-}
-
+void Server::updateSerialNumber(int serialNumber) { this->serialNumber = serialNumber; }
 int Server::getOSUpdateDay() { return lastOSUpdateDay; }
 
 int main(){
@@ -48,10 +40,10 @@ int main(){
     Server s2{ "server1", 1, 10, 1};
     Server s3{ "server2", 2, 20, 1};
 
-    s1.updateMaintanceDay(3);
+    s1.updateMaintanenceDay(3);
     s2.updateSerialNumber(4);
-    s3.updateMaintanceDay(3).updateOSUpdateDay(5);
+    s3.updateMaintanenceDay(3).updateOSUpdateDay(5);
     cout << "The last day OS was updated is "
-        << s1.getOSUpdateDay() << endl;
+         << s1.getOSUpdateDay() << endl;
     return 0;
 }

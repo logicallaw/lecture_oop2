@@ -21,15 +21,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b3d14b-d35e-47e5-b42a-e6abbe54e7fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Chap03/1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap03/2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap03/3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap03/4.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap03/5.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap03/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap03/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap03/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-1c34c4dcb253f72d9705.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap03/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-5dc29d08db3b37543503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap03/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-28T01-11-07-0568.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap03/cmake-build-debug/.cmake/api/v1/reply/target-Chap03-Debug-508a94b6a058b23d25c8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap03/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap03/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Chap03/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap03/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-28T01-06-07-0533.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/cmake-build-debug/Lab04" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/cmake-build-debug/Lab04" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/practice1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/practice1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab04/practice2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/practice2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap03/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap03/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +98,7 @@
       <workItem from="1711588216984" duration="44000" />
       <workItem from="1711588297297" duration="63000" />
       <workItem from="1711604883590" duration="25000" />
+      <workItem from="1711942752997" duration="65000" />
     </task>
     <servers />
   </component>

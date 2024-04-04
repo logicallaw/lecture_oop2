@@ -13,9 +13,9 @@ public:
     void set(int c, int p, int s, int m, string name, string address);
     void set(string name, string address);
     void set(string name, string address, int c, int p, int s, int m);
-    void display () ;
+    void display();
 };
-//Define here
+//Define here - order
 void order::set(int c, int p, int s, int m, string name, string address){
     cheese = c;
     peperoni = p;
@@ -50,7 +50,7 @@ void order::display() {
 
 void pizzaOrder::display() {
     for (int i = 0; i < orders.size(); i++) {
-        orders[i]->display(); //orders의 원소는 포인터라 멤버함수에 접근하려면 Arrow operator를 사용해야한다.
+        (*orders[i]).display(); //orders[i]->display();도 가능
     }
 }
 int main () {

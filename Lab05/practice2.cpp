@@ -2,8 +2,6 @@
 #include <vector>
 using namespace std;
 class order {
-    friend order operator+(const order& o1, const order& o2);
-    friend order operator-(const order& o1, const order& o2);
 private:
     int cheese;
     int peperoni;
@@ -16,6 +14,17 @@ public:
     void set(string name, string address);
     void set(string name, string address, int c, int p, int s, int m);
     void display () ;
+    order operator+(const order& right){
+        order temp;
+        temp.set(cheese + right.cheese, peperoni + right.peperoni, sausage + right.sausage, mushroom + right.mushroom, customerName, address);
+        return temp;
+    }
+    order operator-(const order& right){
+        order temp;
+        temp.set(cheese - right.cheese, peperoni - right.peperoni, sausage - right.sausage, mushroom - right.mushroom, customerName, address);
+        return temp;
+    }
+
 };
 //Define here
 void order::set(int c, int p, int s, int m, string name, string address){
@@ -31,17 +40,6 @@ void order::set(string name, string address) {
 }
 void order::set(string name, string address, int c, int p, int s, int m) {
     set(c, p, s, m, name, address);
-}
-
-order operator+(const order& o1, const order& o2){
-    order temp;
-    temp.set(o1.cheese + o2.cheese, o1.peperoni + o2.peperoni, o1.sausage + o2.sausage, o1.mushroom + o2.mushroom, o1.customerName, o1.address);
-    return temp;
-}
-order operator-(const order& o1, const order& o2){
-    order temp;
-    temp.set(o1.cheese - o2.cheese, o1.peperoni - o2.peperoni, o1.sausage - o2.sausage, o1.mushroom - o2.mushroom, o1.customerName, o1.address);
-    return temp;
 }
 
 class pizzaOrder {
@@ -70,7 +68,7 @@ int main () {
     pizzaOrder orders;
 
     order o1, o2, o3;
-    o1.set(0, 0, 0, 0, "Bart", "New York");
+    o1.set(1, 2, 3, 4, "Bart", "New York");
     orders.add(&o1);
 
     o2.set("Lisa", "New York");
@@ -81,7 +79,7 @@ int main () {
 
     orders.display();
 
-    order o4 = o1 + o3;
+    order o4 = o1 + o3; //operator+호출->복사생성자 자동으로 호출
     o4.display();
     return 0;
 }

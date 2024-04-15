@@ -19,7 +19,7 @@ int main() {
             cout << k << setw(3);
             k++;
         }
-        cout << 두ㅇ;
+        cout ;
     }
 
     cout << setw(3) << 2;

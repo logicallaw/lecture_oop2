@@ -49,8 +49,8 @@ cmake_ninja_workdir = /Users/jun/Desktop/oop2_clion/Chap05/cmake-build-debug/
 
 build cmake_object_order_depends_target_Chap05: phony || CMakeFiles/Chap05.dir
 
-build CMakeFiles/Chap05.dir/ex28.cpp.o: CXX_COMPILER__Chap05_unscanned_Debug /Users/jun/Desktop/oop2_clion/Chap05/ex28.cpp || cmake_object_order_depends_target_Chap05
-  DEP_FILE = CMakeFiles/Chap05.dir/ex28.cpp.o.d
+build CMakeFiles/Chap05.dir/ex26.cpp.o: CXX_COMPILER__Chap05_unscanned_Debug /Users/jun/Desktop/oop2_clion/Chap05/ex26.cpp || cmake_object_order_depends_target_Chap05
+  DEP_FILE = CMakeFiles/Chap05.dir/ex26.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Chap05.dir
   OBJECT_FILE_DIR = CMakeFiles/Chap05.dir
@@ -63,7 +63,7 @@ build CMakeFiles/Chap05.dir/ex28.cpp.o: CXX_COMPILER__Chap05_unscanned_Debug /Us
 #############################################
 # Link the executable Chap05
 
-build Chap05: CXX_EXECUTABLE_LINKER__Chap05_Debug CMakeFiles/Chap05.dir/ex28.cpp.o
+build Chap05: CXX_EXECUTABLE_LINKER__Chap05_Debug CMakeFiles/Chap05.dir/ex26.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/Chap05.dir
   POST_BUILD = :

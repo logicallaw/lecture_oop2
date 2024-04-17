@@ -13,15 +13,15 @@ public:
     ~StaticTmp(){
         cout << --counter << ": " << name << " Called constructor" << endl;
     }
-    static int getCounter() { return counter;
-    }
-
+    static int getCounter() { return counter;}
 };
+
 
 int StaticTmp::counter{0};
 
 static StaticTmp s1{"s1"};
 //(s1)s5(s6)s9(s2)s3s4s4s3s9s10(s11)s10s5(s11,s2,6,1)
+
 void fun1();
 int main(void){
     StaticTmp s5{"s5"};

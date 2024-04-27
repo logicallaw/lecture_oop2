@@ -1,0 +1,23 @@
+# ninja log v5
+2	223	1713957989189975884	CMakeFiles/MidtermExample.dir/16.cpp.o	3829647936a4023b
+2	247	1713932915237108412	CMakeFiles/MidtermExample.dir/2.cpp.o	cbe51713f285aae2
+1	229	1713935636234866731	CMakeFiles/MidtermExample.dir/10.cpp.o	19c1ff3587bcdb3
+2	331	1713955558907359810	CMakeFiles/MidtermExample.dir/12.cpp.o	a8ae7d1d99977900
+0	229	1713933690017057543	CMakeFiles/MidtermExample.dir/5.cpp.o	ce099ec1a18f1d0c
+0	235	1713933181136802181	CMakeFiles/MidtermExample.dir/3.cpp.o	f5f9f35ef4826bdf
+2	226	1713933895014152490	CMakeFiles/MidtermExample.dir/6.cpp.o	6d132c0b5ac533bb
+2	247	1713933936581741960	CMakeFiles/MidtermExample.dir/7.cpp.o	bbf8acbfe5c08543
+0	227	1713935309769970917	CMakeFiles/MidtermExample.dir/9.cpp.o	c1f87072efadff4a
+1	241	1713955754854672832	CMakeFiles/MidtermExample.dir/14.cpp.o	b2a39353179964f8
+2	243	1713955585337821593	CMakeFiles/MidtermExample.dir/13.cpp.o	f2acfb27773d1842
+223	250	1713957989217941726	MidtermExample	dabe01dd2b13b5bd
+1	233	1713935167293731236	CMakeFiles/MidtermExample.dir/8.cpp.o	af5b0236d8e22b98
+0	273	1713934582000749520	CMakeFiles/MidtermExample.dir/4.cpp.o	451a2b22b8d6faf4
+1	244	1713937005296143985	CMakeFiles/MidtermExample.dir/11.cpp.o	59306021f1114b2c
+0	46	1714052255757245557	build.ninja	bdbf46c5636541ad
+0	227	1713956013429296806	CMakeFiles/MidtermExample.dir/15.cpp.o	d846b5aaf8c559bb
+0	45	1714052255757245557	build.ninja	bdbf46c5636541ad
+0	339	1714052256103837345	CMakeFiles/MidtermExample.dir/101.cpp.o	eae3bfb9e28283e6
+339	372	1714052256136816752	MidtermExample	5a8d13d6131aa8eb
+1	242	1714052271523490400	CMakeFiles/MidtermExample.dir/101.cpp.o	eae3bfb9e28283e6
+242	269	1714052271551489190	MidtermExample	5a8d13d6131aa8eb

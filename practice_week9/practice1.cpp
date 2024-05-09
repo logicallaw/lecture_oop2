@@ -1,56 +1,37 @@
 #include <iostream>
 using namespace std;
+class Derived;
 
-class Count {
+class Base {
 protected:
-	int chickens[3];
-	int total;
+	int num1;
 public:
-	void accept_details() {
-		cout << "\n Enter the Number of Each Item to Order ";
-		cout << "\n ------------------------------- \n";
-		cout << "\n BBQ Chicken : ";
-		cin >> chickens[0];
-		cout << "\n Korean Spicy Chicken : ";
-		cin >> chickens[1];
-		cout << "\n Soybean Sauce Chicken : ";
-		cin >> chickens[2];
-	}
+	Base() : num1{ 10 } {}
+	void baseShow() { cout << "Value of Number 1: " << num1 << endl; }
 };
-class Price : public Count {
+
+class Derived : public Base {
+	friend void swap(Derived* d) {
+		int temp = d->num1;
+		d->num1 = d->num2;
+		d->num2 = temp;
+	}
 protected:
-	int prices[3];
+	int num2;
 public:
-	void fix_order() {
-		total = 0;
-		for (int chicken : chickens) {
-			total += chicken;
-		}
-		prices[0] = 100;
-		prices[1] = 5;
-		prices[2] = 10;
+	Derived() : num2{ 20 } {}
+	void show() {
+		baseShow();
+		cout << "Value of Number 2: " << num2 << endl;
 	}
 };
-class Order : public Price {
-private:
-	int totalPrice;
-public:
-	void calculate_price() {
-		totalPrice = chickens[0] * prices[0];
-		totalPrice += chickens[1] * prices[1];
-		totalPrice += chickens[2] * prices[2];
-	}
-	void show_result() {
-		cout << "\n ------------------------------- \n";
-		cout << "\n Total Count: " << total;
-		cout << "\n Total Price : " << totalPrice;
-	}
-};
+
 int main() {
-	Order p;
-	p.accept_details();
-	p.fix_order();
-	p.calculate_price();
-	p.show_result();
+	Derived d;
+	d.show();
+
+	swap(&d);
+
+	d.show();
 	return 0;
 }

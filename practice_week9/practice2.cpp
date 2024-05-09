@@ -1,41 +1,32 @@
 #include <iostream>
 using namespace std;
-
-class Derived;
-
-class Base {
-	friend void swap(Base* b, Derived* d);
-protected:
-	int num1;
+class Engine {
 public:
-	Base() : num1{ 10 } {}
-	void show() { cout << "\n Value of Number 1 : " << num1; }
+	Engine(int nc) {
+		cylinder = nc;
+	}
+
+	void start() {
+		cout << getCylinder() << " cylinder engine started" << endl;
+	}
+
+	int getCylinder() const { return cylinder; }
+private:
+	int cylinder;
 };
 
-class Derived {
-	friend void swap(Base* b, Derived* d);
-protected:
-	int num2;
+class Car : private Engine {
 public:
-	Derived() : num2{ 20 } {}
-	void show() { cout << "\n Value of Number 2 : " << num2; }
+	Car(int nc = 4) : Engine(nc) {}
+	// start()
+	void start() {
+		cout << "car with " << getCylinder() << " cylinder engine started" << endl;
+		Engine::start();
+	}
 };
-
-void swap(Base* b, Derived* d) {
-	int temp = b->num1;
-	b->num1 = d->num2;
-	d->num2 = temp;
-}
 
 int main() {
-	Base b;
-	Derived d;
-	b.show();
-	d.show();
-
-	swap(&b, &d);
-
-	b.show();
-	d.show();
+	Car c(8);
+	c.start();
 	return 0;
 }

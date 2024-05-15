@@ -49,8 +49,8 @@ cmake_ninja_workdir = /Users/jun/Desktop/oop2_clion/date_structure/cmake-build-d
 
 build cmake_object_order_depends_target_date_structure: phony || CMakeFiles/date_structure.dir
 
-build CMakeFiles/date_structure.dir/w1_p3.cpp.o: CXX_COMPILER__date_structure_unscanned_Debug /Users/jun/Desktop/oop2_clion/date_structure/w1_p3.cpp || cmake_object_order_depends_target_date_structure
-  DEP_FILE = CMakeFiles/date_structure.dir/w1_p3.cpp.o.d
+build CMakeFiles/date_structure.dir/w2_p1.cpp.o: CXX_COMPILER__date_structure_unscanned_Debug /Users/jun/Desktop/oop2_clion/date_structure/w2_p1.cpp || cmake_object_order_depends_target_date_structure
+  DEP_FILE = CMakeFiles/date_structure.dir/w2_p1.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/date_structure.dir
   OBJECT_FILE_DIR = CMakeFiles/date_structure.dir
@@ -63,7 +63,7 @@ build CMakeFiles/date_structure.dir/w1_p3.cpp.o: CXX_COMPILER__date_structure_un
 #############################################
 # Link the executable date_structure
 
-build date_structure: CXX_EXECUTABLE_LINKER__date_structure_Debug CMakeFiles/date_structure.dir/w1_p3.cpp.o
+build date_structure: CXX_EXECUTABLE_LINKER__date_structure_Debug CMakeFiles/date_structure.dir/w2_p1.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/date_structure.dir
   POST_BUILD = :

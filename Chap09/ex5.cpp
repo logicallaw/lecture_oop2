@@ -17,10 +17,10 @@ private:
 int main(){
     try{
         myClass my{"Data!"};
-        throw &my;
+        throw my;
     }
-    catch(myClass* e){
-        cout << "catch block: " << e->print() << endl;
+    catch(const myClass& e){
+        cout << "catch block: " << e.print() << endl;
     }
     return 0;
 

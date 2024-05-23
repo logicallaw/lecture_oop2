@@ -1,0 +1,6 @@
+This is the first file.
+This file contains some numbers.
+111222333444
+This is the second file.
+This file contains some characters.
+aaabbbccc
